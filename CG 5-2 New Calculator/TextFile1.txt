@@ -1,0 +1,95 @@
+﻿using System;
+
+namespace CG_3_4_Calculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            /*Coming up with opening sentences have never been my
+            strong suit.  No matter what I have to write.
+            Hope you don't mind a little fun*/
+
+            Console.WriteLine("Welcome to Alicia's crazy adding machine.");
+            Console.WriteLine();
+            Console.WriteLine("You pick the numbers and the operation and we'll give you an answer.");
+            Console.WriteLine();
+            Console.WriteLine("First, please provide any number between 1 and a million.");
+            
+
+            /*This sets up the app to accept the first inputted number by
+            setting the variable to be given by whomever is inputting and
+            for the code to include that into the equation.
+            Also, apparently whenever you get input from a user, the program
+            seems to deem it as a 'string' input.  Did NOT realize that.  
+            That took me near a half an hour to figure out and had to look onto
+            past assignment (read the rectangle assignment) to finally figure it out
+            after MUCH alterations*/
+
+            var No1 = Console.ReadLine();
+            int input1 = Convert.ToInt32(No1);
+
+            Console.WriteLine();
+            Console.WriteLine("Thank you! Now please provid a second number, again any number between 1 and a million.");
+            
+
+            /*This is just like above, with setting the variable to be an inputted 
+            number to be used later on in the coding for the calulator part*/
+
+            var No2 = Console.ReadLine();
+            int input2 = Convert.ToInt32(No2);
+
+            Console.WriteLine();
+            Console.WriteLine("Thank you again for that. Now please choose the operation you would like to use.");
+            Console.WriteLine("You may choose one of the following: add, subtract, multiply, or divide.");
+
+            var operation = Console.ReadLine();
+
+            /*If statements given for each option the user has to answer what operation they would like
+             to go with.  Those choices are then broken down and an answer is given.  Cannot figure out 
+             a way to shorten the code since it has both integers and strings within the code. Anything
+             that I used to try to alter to shorten the code has been met with angry red squiggles.*/
+
+
+            if (operation == "add")
+            {
+               var answer = input1 + input2;
+                Console.WriteLine($"Your answer is {answer}.");
+            }
+
+            else if (operation == "subtract")
+            {
+               var answer = (input1 - input2);
+                Console.WriteLine($"Your answer is {answer}.");
+            }
+            
+            else if (operation == "multiply")
+            {
+                var answer = (input1 * input2);
+                Console.WriteLine($"Your answer is {answer}.");
+            }
+            
+            //I tried to manipulate this so that I could get decimals but there was nothing that I 
+            //could figure out to do to make that work out.  
+
+            else if (operation == "divide")
+            {
+                double answer = (input1 / input2);
+                Console.WriteLine($"Your answer is {answer}.");
+            }
+
+            /*This option is if the user inputs something other then numbers or the operations listed*/
+
+
+            else
+            {
+                Console.WriteLine("Sorry. I did not understand you. You fail.");
+            }
+
+                       
+            Console.ReadLine();
+
+        }
+    }
+}
