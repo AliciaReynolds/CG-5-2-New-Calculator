@@ -38,7 +38,7 @@ namespace CG_5_2_New_Calculator
 
             else if (operation == "divide")
             {
-                Console.WriteLine()
+                Console.WriteLine(Divide(Input1, Input2));
             }
 
 
@@ -81,6 +81,12 @@ namespace CG_5_2_New_Calculator
         public static int Multiply(int input1, int input2)
         {
             return input1 * input2;
+        }
+
+
+        public static int Divide(int input1, int input2)
+        {
+            return input1 / input2;
         }
     }
 
