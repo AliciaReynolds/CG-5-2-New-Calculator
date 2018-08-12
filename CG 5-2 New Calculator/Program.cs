@@ -28,9 +28,18 @@ namespace CG_5_2_New_Calculator
 
             else if (operation == "subtract")
             {
-                Console.WriteLine(Subtraction(Input1, Input2));
+                Console.WriteLine(Subtraction(Input1, Input2));         
             }
 
+            else if (operation == "multiply")
+            {
+                Console.WriteLine(Multiply(Input1, Input2));
+            }
+
+            else if (operation == "divide")
+            {
+                Console.WriteLine()
+            }
 
 
             //Code written to make sure code worked prior to adding function methods
@@ -66,6 +75,12 @@ namespace CG_5_2_New_Calculator
         public static int Subtraction(int input1, int input2)
         {
             return input1 - input2;
+        }
+
+
+        public static int Multiply(int input1, int input2)
+        {
+            return input1 * input2;
         }
     }
 
