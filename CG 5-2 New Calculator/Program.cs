@@ -48,11 +48,20 @@ namespace CG_5_2_New_Calculator
         /// <param name="input2 - number 1-100"></param>
         /// <returns>Adds input1 to input2 and outputs total
         /// </returns>
+        
         public static int Addition(int input1, int input2)
         {
             return input1 + input2;
             
         }
+
+        /// <summary>
+        /// This method is to subtract the user inputed integers 
+        /// </summary>
+        /// <param name="input1 - number 1-100"></param>
+        /// <param name="input2 - number 1-100"></param>
+        /// <returns>Subtracts input1 from input2 and outputs the difference
+        /// </returns>
 
         public static int Subtraction(int input1, int input2)
         {
