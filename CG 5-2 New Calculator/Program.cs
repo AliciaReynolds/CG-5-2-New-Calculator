@@ -26,7 +26,7 @@ namespace CG_5_2_New_Calculator
                 Console.WriteLine(Addition(Input1, Input2));
             }
 
-
+            //Code written to make sure code worked prior to adding function methods
             //int z = Input1 + Input2;
             //Console.WriteLine(z);
 
@@ -34,7 +34,13 @@ namespace CG_5_2_New_Calculator
             Console.ReadLine();
 
 
-        }
+        }/// <summary>
+        /// This method is to add the user inputed integers
+        /// </summary>
+        /// <param name="input1- number 1-100"></param>
+        /// <param name="input2 - number 1-100"></param>
+        /// <returns>Adds input1 to input2 and outputs total
+        /// </returns>
         public static int Addition(int input1, int input2)
         {
             return input1 + input2;
