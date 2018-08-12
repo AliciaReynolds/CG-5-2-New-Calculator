@@ -26,6 +26,13 @@ namespace CG_5_2_New_Calculator
                 Console.WriteLine(Addition(Input1, Input2));
             }
 
+            else if (operation == "subtract")
+            {
+                Console.WriteLine(Subtraction(Input1, Input2));
+            }
+
+
+
             //Code written to make sure code worked prior to adding function methods
             //int z = Input1 + Input2;
             //Console.WriteLine(z);
@@ -46,5 +53,11 @@ namespace CG_5_2_New_Calculator
             return input1 + input2;
             
         }
+
+        public static int Subtraction(int input1, int input2)
+        {
+            return input1 - input2;
+        }
     }
+
 }
